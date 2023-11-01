@@ -187,7 +187,7 @@ namespace Interface1
             // 
             this.lb_NCC.AutoSize = true;
             this.lb_NCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_NCC.Location = new System.Drawing.Point(50, 617);
+            this.lb_NCC.Location = new System.Drawing.Point(50, 601);
             this.lb_NCC.Name = "lb_NCC";
             this.lb_NCC.Size = new System.Drawing.Size(160, 29);
             this.lb_NCC.TabIndex = 15;

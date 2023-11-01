@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Frm_DKY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_DKY.Designer.cs">
+      <DependentUpon>Frm_DKY.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_MAIN.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Frm_CTY.resx">
       <DependentUpon>Frm_CTY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_DKY.resx">
+      <DependentUpon>Frm_DKY.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_DNDK.resx">
       <DependentUpon>Frm_DNDK.cs</DependentUpon>

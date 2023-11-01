@@ -104,6 +104,7 @@ namespace Interface1
             this.linklb_dky.TabIndex = 6;
             this.linklb_dky.TabStop = true;
             this.linklb_dky.Text = "Chưa có tài khoản?";
+            this.linklb_dky.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linklb_dky_LinkClicked);
             // 
             // linklb_cty
             // 
@@ -115,6 +116,7 @@ namespace Interface1
             this.linklb_cty.TabIndex = 8;
             this.linklb_cty.TabStop = true;
             this.linklb_cty.Text = "Quay về trang chủ";
+            this.linklb_cty.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linklb_cty_LinkClicked);
             // 
             // button2
             // 
@@ -125,6 +127,7 @@ namespace Interface1
             this.button2.TabIndex = 9;
             this.button2.Text = "Exit";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Frm_DNDK
             // 

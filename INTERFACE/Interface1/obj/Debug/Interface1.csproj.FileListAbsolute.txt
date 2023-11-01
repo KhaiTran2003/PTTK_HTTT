@@ -12,3 +12,4 @@ F:\1_PTTK\PTTK_HTTT\PTTK_HTTT\INTERFACE\Interface1\obj\Debug\Interface1.Frm_CTY.
 F:\1_PTTK\PTTK_HTTT\PTTK_HTTT\INTERFACE\Interface1\obj\Debug\Interface1.Frm_DNDK.resources
 F:\1_PTTK\PTTK_HTTT\PTTK_HTTT\INTERFACE\Interface1\obj\Debug\Interface1.Frm_HTQL.resources
 F:\1_PTTK\PTTK_HTTT\PTTK_HTTT\INTERFACE\Interface1\obj\Debug\Interface1.Frm_NCC.resources
+F:\1_PTTK\PTTK_HTTT\PTTK_HTTT\INTERFACE\Interface1\obj\Debug\Interface1.Frm_DKY.resources

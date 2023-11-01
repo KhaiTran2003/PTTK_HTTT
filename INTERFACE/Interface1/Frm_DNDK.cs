@@ -17,6 +17,21 @@ namespace Interface1
             InitializeComponent();
         }
 
-       
+        private void linklb_dky_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Frm_DKY frm_dky = new Frm_DKY();
+            frm_dky.Show();
+        }
+
+        private void linklb_cty_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Frm_MAIN frm_main = new Frm_MAIN();
+            frm_main.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
