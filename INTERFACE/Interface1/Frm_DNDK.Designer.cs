@@ -56,9 +56,9 @@ namespace Interface1
             this.lb_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_name.Location = new System.Drawing.Point(31, 134);
             this.lb_name.Name = "lb_name";
-            this.lb_name.Size = new System.Drawing.Size(151, 25);
+            this.lb_name.Size = new System.Drawing.Size(132, 25);
             this.lb_name.TabIndex = 1;
-            this.lb_name.Text = "Tên đăng nhập:";
+            this.lb_name.Text = "Số điện thoại:";
             // 
             // lb_mk
             // 
