@@ -16,5 +16,23 @@ namespace Interface1
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Frm_DNDK frm_DNDK = new Frm_DNDK();
+            frm_DNDK.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Frm_DKY frm_DKY = new Frm_DKY();
+            frm_DKY.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Frm_SPNoiBat sPNoiBat = new Frm_SPNoiBat();
+            sPNoiBat.Show();
+        }
     }
 }

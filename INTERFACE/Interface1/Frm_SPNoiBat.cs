@@ -10,21 +10,13 @@ using System.Windows.Forms;
 
 namespace Interface1
 {
-    public partial class Frm_HTQL : Form
+    public partial class Frm_SPNoiBat : Form
     {
-        public Frm_HTQL()
+        public Frm_SPNoiBat()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+      
     }
 }
