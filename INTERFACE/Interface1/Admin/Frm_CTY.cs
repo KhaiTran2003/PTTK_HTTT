@@ -25,14 +25,19 @@ namespace Interface1
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Frm_DKY frm_DKY = new Frm_DKY();
-            frm_DKY.Show();
+            Frm_DKYuser frm_DKYuser = new Frm_DKYuser();
+            frm_DKYuser.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Frm_SPNoiBat sPNoiBat = new Frm_SPNoiBat();
             sPNoiBat.Show();
+        }
+
+        private void Frm_CTY_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

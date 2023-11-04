@@ -37,13 +37,14 @@ namespace Interface1
             this.panel3 = new System.Windows.Forms.Panel();
             this.btn_DNDK = new System.Windows.Forms.Button();
             this.btn_HTQL = new System.Windows.Forms.Button();
-            this.btn_CTY = new System.Windows.Forms.Button();
             this.btn_NCC = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lb_DNDK = new System.Windows.Forms.Label();
             this.lb_HTQL = new System.Windows.Forms.Label();
             this.lb_CTY = new System.Windows.Forms.Label();
             this.lb_NCC = new System.Windows.Forms.Label();
+            this.lb_UserMAIN = new System.Windows.Forms.LinkLabel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -116,7 +117,7 @@ namespace Interface1
             // 
             // btn_HTQL
             // 
-            this.btn_HTQL.Location = new System.Drawing.Point(672, 331);
+            this.btn_HTQL.Location = new System.Drawing.Point(672, 300);
             this.btn_HTQL.Name = "btn_HTQL";
             this.btn_HTQL.Size = new System.Drawing.Size(140, 45);
             this.btn_HTQL.TabIndex = 4;
@@ -124,19 +125,9 @@ namespace Interface1
             this.btn_HTQL.UseVisualStyleBackColor = true;
             this.btn_HTQL.Click += new System.EventHandler(this.btn_HTQL_Click);
             // 
-            // btn_CTY
-            // 
-            this.btn_CTY.Location = new System.Drawing.Point(672, 467);
-            this.btn_CTY.Name = "btn_CTY";
-            this.btn_CTY.Size = new System.Drawing.Size(140, 45);
-            this.btn_CTY.TabIndex = 4;
-            this.btn_CTY.Text = "Trang chủ";
-            this.btn_CTY.UseVisualStyleBackColor = true;
-            this.btn_CTY.Click += new System.EventHandler(this.btn_CTY_Click);
-            // 
             // btn_NCC
             // 
-            this.btn_NCC.Location = new System.Drawing.Point(672, 601);
+            this.btn_NCC.Location = new System.Drawing.Point(672, 504);
             this.btn_NCC.Name = "btn_NCC";
             this.btn_NCC.Size = new System.Drawing.Size(140, 45);
             this.btn_NCC.TabIndex = 4;
@@ -159,39 +150,61 @@ namespace Interface1
             this.lb_DNDK.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_DNDK.Location = new System.Drawing.Point(50, 217);
             this.lb_DNDK.Name = "lb_DNDK";
-            this.lb_DNDK.Size = new System.Drawing.Size(228, 29);
+            this.lb_DNDK.Size = new System.Drawing.Size(222, 29);
             this.lb_DNDK.TabIndex = 8;
-            this.lb_DNDK.Text = "Đăng nhập/ Đăng ký";
+            this.lb_DNDK.Text = "Quản lý khách hàng";
             // 
             // lb_HTQL
             // 
             this.lb_HTQL.AutoSize = true;
             this.lb_HTQL.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_HTQL.Location = new System.Drawing.Point(50, 347);
+            this.lb_HTQL.Location = new System.Drawing.Point(50, 316);
             this.lb_HTQL.Name = "lb_HTQL";
-            this.lb_HTQL.Size = new System.Drawing.Size(192, 29);
+            this.lb_HTQL.Size = new System.Drawing.Size(199, 29);
             this.lb_HTQL.TabIndex = 13;
-            this.lb_HTQL.Text = "Hệ thống quản lý";
+            this.lb_HTQL.Text = "Quản lý hệ thống ";
             // 
             // lb_CTY
             // 
             this.lb_CTY.AutoSize = true;
             this.lb_CTY.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_CTY.Location = new System.Drawing.Point(50, 483);
+            this.lb_CTY.Location = new System.Drawing.Point(50, 412);
             this.lb_CTY.Name = "lb_CTY";
-            this.lb_CTY.Size = new System.Drawing.Size(115, 29);
+            this.lb_CTY.Size = new System.Drawing.Size(199, 29);
             this.lb_CTY.TabIndex = 14;
-            this.lb_CTY.Text = "Giới thiệu";
+            this.lb_CTY.Text = "Báo cáo thống kê";
             // 
             // lb_NCC
             // 
             this.lb_NCC.AutoSize = true;
             this.lb_NCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_NCC.Location = new System.Drawing.Point(50, 601);
+            this.lb_NCC.Location = new System.Drawing.Point(50, 508);
             this.lb_NCC.Name = "lb_NCC";
             this.lb_NCC.Size = new System.Drawing.Size(160, 29);
             this.lb_NCC.TabIndex = 15;
             this.lb_NCC.Text = "Nhà cung cấp";
+            // 
+            // lb_UserMAIN
+            // 
+            this.lb_UserMAIN.AutoSize = true;
+            this.lb_UserMAIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_UserMAIN.Location = new System.Drawing.Point(254, 620);
+            this.lb_UserMAIN.Name = "lb_UserMAIN";
+            this.lb_UserMAIN.Size = new System.Drawing.Size(377, 29);
+            this.lb_UserMAIN.TabIndex = 16;
+            this.lb_UserMAIN.TabStop = true;
+            this.lb_UserMAIN.Text = "Chuyển sang chế độ người dùng";
+            this.lb_UserMAIN.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lb_UserMAIN_LinkClicked);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(672, 412);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(140, 47);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Quản lý";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Frm_MAIN
             // 
@@ -200,13 +213,14 @@ namespace Interface1
             this.BackgroundImage = global::Interface1.Properties.Resources.bgMain;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(982, 753);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lb_UserMAIN);
             this.Controls.Add(this.lb_NCC);
             this.Controls.Add(this.lb_CTY);
             this.Controls.Add(this.lb_HTQL);
             this.Controls.Add(this.lb_DNDK);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.btn_NCC);
-            this.Controls.Add(this.btn_CTY);
             this.Controls.Add(this.btn_HTQL);
             this.Controls.Add(this.btn_DNDK);
             this.Controls.Add(this.panel3);
@@ -232,7 +246,6 @@ namespace Interface1
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btn_DNDK;
         private System.Windows.Forms.Button btn_HTQL;
-        private System.Windows.Forms.Button btn_CTY;
         private System.Windows.Forms.Button btn_NCC;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -240,6 +253,8 @@ namespace Interface1
         private System.Windows.Forms.Label lb_HTQL;
         private System.Windows.Forms.Label lb_CTY;
         private System.Windows.Forms.Label lb_NCC;
+        private System.Windows.Forms.LinkLabel lb_UserMAIN;
+        private System.Windows.Forms.Button button1;
     }
 }
 

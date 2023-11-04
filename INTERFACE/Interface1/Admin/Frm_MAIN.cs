@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Interface1.Users;
 
 namespace Interface1
 {
@@ -35,11 +36,6 @@ namespace Interface1
             frm_htql.Show();
         }
 
-        private void btn_CTY_Click(object sender, EventArgs e)
-        {
-            Frm_CTY frm_cty = new Frm_CTY();
-            frm_cty.Show();
-        }
 
         private void btn_NCC_Click(object sender, EventArgs e)
         {
@@ -47,5 +43,10 @@ namespace Interface1
             frm_ncc.Show();
         }
 
+        private void lb_UserMAIN_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Frm_userMAIN frm_UserMAIN = new Frm_userMAIN();
+            frm_UserMAIN.Show();
+        }
     }
 }

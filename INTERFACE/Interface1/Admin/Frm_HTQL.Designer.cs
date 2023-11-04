@@ -320,7 +320,7 @@ namespace Interface1
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(459, 489);
+            this.textBox8.Location = new System.Drawing.Point(454, 489);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(100, 30);
             this.textBox8.TabIndex = 29;

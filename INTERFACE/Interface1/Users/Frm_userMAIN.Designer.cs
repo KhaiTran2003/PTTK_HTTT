@@ -1,7 +1,8 @@
 ﻿
-namespace Interface1
+namespace Interface1.Users
 {
-    partial class Frm_CTY
+    partial class Frm_userMAIN
+
     {
         /// <summary>
         /// Required designer variable.
@@ -110,6 +111,7 @@ namespace Interface1
             this.Name = "Frm_CTY";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.Text = "Frm_CTY";
+            this.Load += new System.EventHandler(this.Frm_userMAIN_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

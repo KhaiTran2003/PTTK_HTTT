@@ -14,3 +14,7 @@ F:\1_PTTK\PTTK_HTTT\PTTK_HTTT\INTERFACE\Interface1\obj\Debug\Interface1.Frm_HTQL
 F:\1_PTTK\PTTK_HTTT\PTTK_HTTT\INTERFACE\Interface1\obj\Debug\Interface1.Frm_NCC.resources
 F:\1_PTTK\PTTK_HTTT\PTTK_HTTT\INTERFACE\Interface1\obj\Debug\Interface1.Frm_DKY.resources
 F:\1_PTTK\PTTK_HTTT\PTTK_HTTT\INTERFACE\Interface1\obj\Debug\Interface1.Frm_SPNoiBat.resources
+F:\1_PTTK\PTTK_HTTT\PTTK_HTTT\INTERFACE\Interface1\obj\Debug\Interface1.Frm_DKYuser.resources
+F:\1_PTTK\PTTK_HTTT\PTTK_HTTT\INTERFACE\Interface1\obj\Debug\Interface1.Users.Frm_userMAIN.resources
+F:\1_PTTK\PTTK_HTTT\PTTK_HTTT\INTERFACE\Interface1\obj\Debug\Interface1.Users.Frm_DNuser.resources
+F:\1_PTTK\PTTK_HTTT\PTTK_HTTT\INTERFACE\Interface1\obj\Debug\Interface1.Users.Frm_SPNoiBat.resources
