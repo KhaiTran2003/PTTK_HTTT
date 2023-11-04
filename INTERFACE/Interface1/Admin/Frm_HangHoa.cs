@@ -12,7 +12,7 @@ namespace Interface1
 {
     public partial class Frm_HangHoa : Form
     {
-        public Frm_SPNoiBat()
+        public Frm_HangHoa()
         {
             InitializeComponent();
         }
