@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Interface1.Admin
+namespace Interface1
 {
-    public partial class Frm_BaoCaoThongKe : Form
+    public partial class Frm_BCTK : Form
     {
-        public Frm_BaoCaoThongKe()
+        public Frm_BCTK()
         {
             InitializeComponent();
+        }
+
+        private void Frm_BCTK_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

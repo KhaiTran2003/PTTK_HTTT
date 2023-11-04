@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Interface1
 {
-    public partial class Frm_SPNoiBat : Form
+    public partial class Frm_HangHoa : Form
     {
         public Frm_SPNoiBat()
         {

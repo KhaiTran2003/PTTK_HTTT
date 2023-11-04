@@ -48,5 +48,11 @@ namespace Interface1
             Frm_userMAIN frm_UserMAIN = new Frm_userMAIN();
             frm_UserMAIN.Show();
         }
+
+        private void btn_BCTK_Click(object sender, EventArgs e)
+        {
+            Frm_HangHoa frm_HangHoa = new Frm_HangHoa();
+            frm_HangHoa.Show();
+        }
     }
 }

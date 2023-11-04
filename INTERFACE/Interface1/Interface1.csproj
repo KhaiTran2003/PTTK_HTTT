@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\Frm_BCTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Frm_BCTK.Designer.cs">
+      <DependentUpon>Frm_BCTK.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Frm_DKY.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,9 @@
     <Compile Include="Users\Frm_userMAIN.Designer.cs">
       <DependentUpon>Frm_userMAIN.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Admin\Frm_BCTK.resx">
+      <DependentUpon>Frm_BCTK.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\Frm_CTY.resx">
       <DependentUpon>Frm_CTY.cs</DependentUpon>
     </EmbeddedResource>

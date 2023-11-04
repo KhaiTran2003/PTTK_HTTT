@@ -1,7 +1,7 @@
 ﻿
 namespace Interface1
 {
-    partial class Frm_SPNoiBat
+    partial class Frm_HangHoa
     {
         /// <summary>
         /// Required designer variable.

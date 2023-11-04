@@ -36,7 +36,6 @@ namespace Interface1
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btn_DNDK = new System.Windows.Forms.Button();
-            this.btn_HTQL = new System.Windows.Forms.Button();
             this.btn_NCC = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lb_DNDK = new System.Windows.Forms.Label();
@@ -45,6 +44,7 @@ namespace Interface1
             this.lb_NCC = new System.Windows.Forms.Label();
             this.lb_UserMAIN = new System.Windows.Forms.LinkLabel();
             this.button1 = new System.Windows.Forms.Button();
+            this.btn_BCTK = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -108,26 +108,16 @@ namespace Interface1
             // 
             // btn_DNDK
             // 
-            this.btn_DNDK.Location = new System.Drawing.Point(672, 201);
+            this.btn_DNDK.Location = new System.Drawing.Point(672, 213);
             this.btn_DNDK.Name = "btn_DNDK";
             this.btn_DNDK.Size = new System.Drawing.Size(140, 45);
             this.btn_DNDK.TabIndex = 7;
             this.btn_DNDK.Text = "Đăng nhập/ Đăng ký";
             this.btn_DNDK.Click += new System.EventHandler(this.btn_DNDK_Click);
             // 
-            // btn_HTQL
-            // 
-            this.btn_HTQL.Location = new System.Drawing.Point(672, 300);
-            this.btn_HTQL.Name = "btn_HTQL";
-            this.btn_HTQL.Size = new System.Drawing.Size(140, 45);
-            this.btn_HTQL.TabIndex = 4;
-            this.btn_HTQL.Text = "Chi tiết quản lý ";
-            this.btn_HTQL.UseVisualStyleBackColor = true;
-            this.btn_HTQL.Click += new System.EventHandler(this.btn_HTQL_Click);
-            // 
             // btn_NCC
             // 
-            this.btn_NCC.Location = new System.Drawing.Point(672, 504);
+            this.btn_NCC.Location = new System.Drawing.Point(672, 492);
             this.btn_NCC.Name = "btn_NCC";
             this.btn_NCC.Size = new System.Drawing.Size(140, 45);
             this.btn_NCC.TabIndex = 4;
@@ -172,7 +162,7 @@ namespace Interface1
             this.lb_CTY.Name = "lb_CTY";
             this.lb_CTY.Size = new System.Drawing.Size(199, 29);
             this.lb_CTY.TabIndex = 14;
-            this.lb_CTY.Text = "Báo cáo thống kê";
+            this.lb_CTY.Text = "Quản lý hàng hóa";
             // 
             // lb_NCC
             // 
@@ -198,13 +188,24 @@ namespace Interface1
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(672, 412);
+            this.button1.Location = new System.Drawing.Point(672, 312);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 47);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Quản lý";
+            this.button1.Size = new System.Drawing.Size(140, 45);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Chi tiết quản lý ";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btn_HTQL_Click);
+            // 
+            // btn_BCTK
+            // 
+            this.btn_BCTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_BCTK.Location = new System.Drawing.Point(672, 407);
+            this.btn_BCTK.Name = "btn_BCTK";
+            this.btn_BCTK.Size = new System.Drawing.Size(140, 45);
+            this.btn_BCTK.TabIndex = 17;
+            this.btn_BCTK.Text = "Chi tiết quản lý";
+            this.btn_BCTK.UseVisualStyleBackColor = true;
+            this.btn_BCTK.Click += new System.EventHandler(this.btn_BCTK_Click);
             // 
             // Frm_MAIN
             // 
@@ -213,7 +214,7 @@ namespace Interface1
             this.BackgroundImage = global::Interface1.Properties.Resources.bgMain;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(982, 753);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_BCTK);
             this.Controls.Add(this.lb_UserMAIN);
             this.Controls.Add(this.lb_NCC);
             this.Controls.Add(this.lb_CTY);
@@ -221,7 +222,7 @@ namespace Interface1
             this.Controls.Add(this.lb_DNDK);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.btn_NCC);
-            this.Controls.Add(this.btn_HTQL);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_DNDK);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -245,7 +246,6 @@ namespace Interface1
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btn_DNDK;
-        private System.Windows.Forms.Button btn_HTQL;
         private System.Windows.Forms.Button btn_NCC;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -255,6 +255,7 @@ namespace Interface1
         private System.Windows.Forms.Label lb_NCC;
         private System.Windows.Forms.LinkLabel lb_UserMAIN;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_BCTK;
     }
 }
 

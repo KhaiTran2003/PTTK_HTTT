@@ -1,7 +1,7 @@
 ﻿
-namespace Interface1.Admin
+namespace Interface1
 {
-    partial class Frm_BaoCaoThongKe
+    partial class Frm_BCTK
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,18 @@ namespace Interface1.Admin
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Frm_BCTK
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Frm_BaoCaoThongKe";
+            this.Name = "Frm_BCTK";
+            this.Text = "Frm_BCTK";
+            this.Load += new System.EventHandler(this.Frm_BCTK_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
