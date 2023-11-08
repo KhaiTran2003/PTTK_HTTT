@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{84401089-6F78-4DB0-8F8E-82605D26E5A2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Interface1</RootNamespace>
+    <AssemblyName>Interface1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Frm_BCTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Frm_BCTK.Designer.cs">
+      <DependentUpon>Frm_BCTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Frm_DKY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Frm_DKY.Designer.cs">
+      <DependentUpon>Frm_DKY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Frm_DKYuser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\Frm_DKYuser.Designer.cs">
+      <DependentUpon>Frm_DKYuser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Frm_MAIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Frm_MAIN.Designer.cs">
+      <DependentUpon>Frm_MAIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Frm_CTY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Frm_CTY.Designer.cs">
+      <DependentUpon>Frm_CTY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Frm_NCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Frm_NCC.Designer.cs">
+      <DependentUpon>Frm_NCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Frm_DNDK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Frm_DNDK.Designer.cs">
+      <DependentUpon>Frm_DNDK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Frm_HTQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Frm_HTQL.Designer.cs">
+      <DependentUpon>Frm_HTQL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Frm_HangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Frm_HangHoa.Designer.cs">
+      <DependentUpon>Frm_HangHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Users\Frm_DNuser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\Frm_DNuser.Designer.cs">
+      <DependentUpon>Frm_DNuser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Frm_SPNoiBat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\Frm_SPNoiBat.Designer.cs">
+      <DependentUpon>Frm_SPNoiBat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\Frm_userMAIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\Frm_userMAIN.Designer.cs">
+      <DependentUpon>Frm_userMAIN.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin\Frm_BCTK.resx">
+      <DependentUpon>Frm_BCTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Frm_CTY.resx">
+      <DependentUpon>Frm_CTY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Frm_DKY.resx">
+      <DependentUpon>Frm_DKY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Frm_DKYuser.resx">
+      <DependentUpon>Frm_DKYuser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Frm_DNDK.resx">
+      <DependentUpon>Frm_DNDK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Frm_HTQL.resx">
+      <DependentUpon>Frm_HTQL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Frm_MAIN.resx">
+      <DependentUpon>Frm_MAIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Frm_NCC.resx">
+      <DependentUpon>Frm_NCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Frm_HangHoa.resx">
+      <DependentUpon>Frm_HangHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Users\Frm_DNuser.resx">
+      <DependentUpon>Frm_DNuser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Frm_SPNoiBat.resx">
+      <DependentUpon>Frm_SPNoiBat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Frm_userMAIN.resx">
+      <DependentUpon>Frm_userMAIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\car1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\car2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\car3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\car4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\car5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\car6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\car7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\car8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\car9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\bg2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\bgMain.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

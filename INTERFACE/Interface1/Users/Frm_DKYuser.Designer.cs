@@ -313,6 +313,7 @@ namespace Interface1
             this.Controls.Add(this.lb_dky);
             this.Name = "Frm_DKYuser";
             this.Text = "Frm_DKY";
+            this.Load += new System.EventHandler(this.Frm_DKYuser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -198,7 +198,7 @@ namespace Interface1
             // 
             // btn_BCTK
             // 
-            this.btn_BCTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_BCTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_BCTK.Location = new System.Drawing.Point(672, 407);
             this.btn_BCTK.Name = "btn_BCTK";
             this.btn_BCTK.Size = new System.Drawing.Size(140, 45);

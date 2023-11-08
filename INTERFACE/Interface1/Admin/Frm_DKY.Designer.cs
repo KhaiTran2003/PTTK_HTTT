@@ -87,9 +87,9 @@ namespace Interface1
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(120, 71);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 20);
+            this.label1.Size = new System.Drawing.Size(31, 20);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Tên";
+            this.label1.Text = "Họ";
             // 
             // label2
             // 
@@ -160,6 +160,7 @@ namespace Interface1
             this.btn_xacnhanDKY.TabIndex = 11;
             this.btn_xacnhanDKY.Text = "Xác nhận";
             this.btn_xacnhanDKY.UseVisualStyleBackColor = true;
+            this.btn_xacnhanDKY.Click += new System.EventHandler(this.btn_xacnhanDKY_Click);
             // 
             // textBox1
             // 
@@ -233,6 +234,7 @@ namespace Interface1
             this.btn_xoa.TabIndex = 15;
             this.btn_xoa.Text = "Xóa";
             this.btn_xoa.UseVisualStyleBackColor = true;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
             // btn_sua
             // 
@@ -243,6 +245,7 @@ namespace Interface1
             this.btn_sua.TabIndex = 16;
             this.btn_sua.Text = "Sửa";
             this.btn_sua.UseVisualStyleBackColor = true;
+            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
             // label8
             // 

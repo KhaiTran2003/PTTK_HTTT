@@ -1,0 +1,147 @@
+create database HeThongVinFast;
+USE HeThongVinFast;
+
+CREATE TABLE CongTiVinFast (
+    MaCongTy VARCHAR(10) NOT NULL,
+    SoDienThoaiCT int NOT NULL,
+    DiaDiemCT NVARCHAR(100) NOT NULL,
+    CONSTRAINT pk_congtivinfast PRIMARY KEY (MaCongTy)
+);
+
+CREATE TABLE HeThongQuanLiCTVinFast (
+    MaHeThong VARCHAR(15) NOT NULL,
+    MaCongTy VARCHAR(10) NOT NULL,
+    TenChucNangHT NVARCHAR(100) NOT NULL,
+    CONSTRAINT pk_hethongctvinfast PRIMARY KEY (MaHeThong),
+    CONSTRAINT fk_HeThongQuanLiCTVinFast_congtivinfast FOREIGN KEY (MaCongTy) REFERENCES CongTiVinFast (MaCongTy)
+);
+
+CREATE TABLE KhachHang (
+    MaTaiKhoanKH VARCHAR(10) NOT NULL,
+    MatKhau VARCHAR(50) NOT NULL,
+    MaHeThong VARCHAR(15) NOT NULL,
+    Ho NVARCHAR(20) NOT NULL,
+    TenDem NVARCHAR(20),
+    Ten NVARCHAR(20) NOT NULL,
+    GioiTinh NVARCHAR(5),
+    NgaySinh DATE,
+    SoDienThoai INT NOT NULL,
+    CONSTRAINT pk_khachhang PRIMARY KEY (MaTaiKhoanKH),
+    CONSTRAINT fk_khachhang_hetthongquanlictvinfast FOREIGN KEY (MaHeThong) REFERENCES HeThongQuanLiCTVinFast (MaHeThong)
+);
+create table NguoiQuanLyHT(
+	MaNQL varchar(10) not null,
+	MaHeThong varchar(15) not null,
+	Ho nvarchar(20) not null,
+	TenDem nvarchar(20),
+	Ten nvarchar(20) not null,
+	TenHeThongDuocQL nvarchar(100) not null,
+	SoDienThoai int not null,
+	constraint pk_nguoiquanliht primary key(MaNQL),
+	constraint fk_nguoiquanliht_hethongquanlictvinfast FOREIGN KEY (MaHeThong) REFERENCES HeThongQuanLiCTVinFast(MaHeThong)
+);
+
+create table NhaCungCap(
+	MaNCC varchar(10) not null,
+	TenNCC nvarchar(100) not null,
+	DiaChiNCC nvarchar(100) not null,
+	MaCongTy varchar(10) not null,
+	SoDienThoaiNCC int NOT NULL,
+	constraint pk_nhacungcap primary key(MaNCC),
+	constraint fk_nhacungcap_congtivinfast FOREIGN KEY (MaCongTy) REFERENCES CongTiVinFast(MaCongTy)
+);
+
+CREATE TABLE HangHoa (
+    MaSp int not null,
+    TenSp nvarchar(50) not null,
+    NgaySX datetime not null,
+    Gia float not null,
+    MaCongTy VARCHAR(10),
+	CONSTRAINT pk_hanghoa PRIMARY KEY (MaSP),
+    CONSTRAINT fk_CongTiVinFast FOREIGN KEY (MaCongTy) REFERENCES CongTiVinFast(MaCongTy)
+);
+
+--------------------------------------------------------------------------------------------------------
+USE HeThongVinFast;
+BEGIN /** KhachHang **/
+
+ALTER TABLE KhachHang
+NOCHECK CONSTRAINT ALL;
+INSERT INTO KhachHang (MaTaiKhoanKH,MatKhau ,MaHeThong, Ho, TenDem, Ten, GioiTinh, NgaySinh, SoDienThoai)
+VALUES ('KH001', 'Popssw0', 'HT001', 'Nguyen', 'Van', 'A', 'nam', '2003-11-01', '0123456789'),
+       ('KH002', '3xempl3', 'HT001', 'Tran', 'Thi', 'B', 'nu', '2004-12-02', '0987654321'),
+       ('KH003', 'Securety!', 'HT002', 'Le', 'Cong', 'C', 'nam', '2005-01-03', '0123456789'),
+       ('KH004', 'Ch0c0lyt3', 'HT002', 'Pham', 'Thi', 'D', 'nu', '2006-02-04', '0987654321'),
+       ('KH005', 'Fr13ndsh1p', 'HT003', 'Ho', 'Thi', 'E', 'nam', '2007-03-05', '0123456789'),
+	   ('KH006', 'B3autiful', 'HT001', 'Nguyen', 'Van', 'F', 'nam', '2008-04-06', '0123456789'),
+	   ('KH007', '9Rainb0ws', 'HT002', 'Tran', 'Van', 'G', 'nu', '2009-05-07', '0987654321'),
+	   ('KH008', 'L0v3P3ac3s', 'HT003', 'Le', 'Van', 'H', 'nam', '2010-06-08', '0123456789');
+ALTER TABLE KhachHang
+CHECK CONSTRAINT ALL;
+
+END
+
+BEGIN /** KhachHang **/
+
+ALTER TABLE HeThongQuanLiCTVinFast
+NOCHECK CONSTRAINT ALL;
+INSERT INTO HeThongQuanLiCTVinFast (MaHeThong, MaCongTy, TenChucNangHT)
+VALUES ('HT001', 'CT001', 'Kinh doanh xe ô tô'),
+       ('HT002', 'CT002', 'Bảo hành và sửa chữa xe ô tô'),
+       ('HT003', 'CT003', 'Chăm sóc khách hàng');
+ALTER TABLE HeThongQuanLiCTVinFast
+CHECK CONSTRAINT ALL;
+
+END
+
+BEGIN /** KhachHang **/
+
+ALTER TABLE NguoiQuanLyHT
+NOCHECK CONSTRAINT ALL;
+INSERT INTO NguoiQuanLyHT (MaNQL, MaHeThong, Ho, TenDem, Ten, TenHeThongDuocQL, SoDienThoai)
+VALUES ('NQL001', 'HT001', 'Tran', 'Van', 'A', 'Hệ thống quản lý bán hàng xe ô tô', '0123456789'),
+       ('NQL002', 'HT002', 'Le', 'Thi', 'B', 'Hệ thống quản lý bảo hành và sửa chữa xe ô tô', '0987654321'),
+       ('NQL003', 'HT003', 'Pham', 'Cong', 'C', 'Hệ thống quản lý chăm sóc khách hàng', '0123456789');
+ALTER TABLE NguoiQuanLyHT
+CHECK CONSTRAINT ALL;
+
+END
+
+BEGIN /** KhachHang **/
+
+ALTER TABLE NhaCungCap
+NOCHECK CONSTRAINT ALL;
+INSERT INTO NhaCungCap (MaNCC, TenNCC, DiaChiNCC, MaCongTy, SoDienThoaiNCC)
+VALUES ('NCC001', 'Công ty Cổ phần Vingroup', 'Số 172 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội', 'CT001','098765432'),
+       ('NCC002', 'Công ty TNHH MTV Bosch Việt Nam', 'Lô I-1, KCN Thăng Long, Đông Anh, Hà Nội', 'CT001', '087654321'),
+       ('NCC003', 'Công ty TNHH MTV Bridgestone Việt Nam', 'Lô CN1, KCN Biên Hòa 2, Đồng Nai', 'CT001', '012345678');
+ALTER TABLE NhaCungCap
+CHECK CONSTRAINT ALL;
+
+END
+
+BEGIN /** CongTiVinFast **/
+
+ALTER TABLE CongTiVinFast
+NOCHECK CONSTRAINT ALL;
+INSERT INTO CongTiVinFast (MaCongTy, SoDienThoaiCT, DiaDiemCT)
+VALUES ('CT001', '02439335888', 'Số 172 Nguyễn Huy Tưởng, Thanh Xuân, Hà Nội'),
+       ('CT002', '02838401234', 'Số 123 Quốc lộ 1A, Quận 12, TP. Hồ Chí Minh'),
+       ('CT003', '05113909876', 'Số 123 Đại lộ Lê Nin, TP. Cần Thơ');
+ALTER TABLE CongTiVinFast
+CHECK CONSTRAINT ALL;
+
+END
+--Hàng hóa
+BEGIN
+
+ALTER TABLE HangHoa
+NOCHECK CONSTRAINT ALL;
+INSERT INTO HangHoa (MaSp, TenSp, NgaySX, Gia, MaCongTy)
+VALUES
+    (1, N'Sản phẩm 1', '2023-01-01', 100.0, 'CT001'),
+    (2, N'Sản phẩm 2', '2023-02-01', 150.0, 'CT002'),
+    (3, N'Sản phẩm 3', '2023-03-01', 200.0, 'CT003'),
+    (4, N'Sản phẩm 4', '2023-04-01', 250.0, 'CT004'),
+    (5, N'Sản phẩm 5', '2023-05-01', 300.0, 'CT005');
+END

@@ -93,6 +93,7 @@ namespace Interface1.Users
             this.btn_dn.TabIndex = 5;
             this.btn_dn.Text = "Đăng nhập";
             this.btn_dn.UseVisualStyleBackColor = true;
+            this.btn_dn.Click += new System.EventHandler(this.btn_dn_Click_1);
             // 
             // linklb_dky
             // 
@@ -116,7 +117,7 @@ namespace Interface1.Users
             this.linklb_cty.TabIndex = 8;
             this.linklb_cty.TabStop = true;
             this.linklb_cty.Text = "Quay về trang chủ";
-            this.linklb_cty.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linklb_cty_LinkClicked);
+            this.linklb_cty.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linklb_dky_LinkClicked);
             // 
             // button2
             // 

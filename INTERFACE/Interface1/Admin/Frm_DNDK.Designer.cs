@@ -93,6 +93,7 @@ namespace Interface1
             this.btn_dn.TabIndex = 5;
             this.btn_dn.Text = "Đăng nhập";
             this.btn_dn.UseVisualStyleBackColor = true;
+            this.btn_dn.Click += new System.EventHandler(this.btn_dn_Click);
             // 
             // linklb_dky
             // 
