@@ -56,9 +56,10 @@ CREATE TABLE HangHoa (
     TenSp nvarchar(50) not null,
     NgaySX datetime not null,
     Gia float not null,
+    SoLuong int not null,
     HinhAnh nvarchar(255),
     MaCongTy VARCHAR(10),
-	CONSTRAINT pk_hanghoa PRIMARY KEY (MaSP),
+    CONSTRAINT pk_hanghoa PRIMARY KEY (MaSP),
     CONSTRAINT fk_CongTiVinFast FOREIGN KEY (MaCongTy) REFERENCES CongTiVinFast(MaCongTy)
 );
 
