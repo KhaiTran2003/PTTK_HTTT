@@ -58,6 +58,12 @@
     <Compile Include="Admin\Frm_DKY.Designer.cs">
       <DependentUpon>Frm_DKY.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Frm_HangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Frm_HangHoa.Designer.cs">
+      <DependentUpon>Frm_HangHoa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Users\Frm_DKYuser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,12 +100,6 @@
     <Compile Include="Admin\Frm_HTQL.Designer.cs">
       <DependentUpon>Frm_HTQL.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Frm_HangHoa.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin\Frm_HangHoa.Designer.cs">
-      <DependentUpon>Frm_HangHoa.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Users\Frm_DNuser.cs">
@@ -129,6 +129,9 @@
     <EmbeddedResource Include="Admin\Frm_DKY.resx">
       <DependentUpon>Frm_DKY.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Frm_HangHoa.resx">
+      <DependentUpon>Frm_HangHoa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Users\Frm_DKYuser.resx">
       <DependentUpon>Frm_DKYuser.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,9 +146,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Frm_NCC.resx">
       <DependentUpon>Frm_NCC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Frm_HangHoa.resx">
-      <DependentUpon>Frm_HangHoa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

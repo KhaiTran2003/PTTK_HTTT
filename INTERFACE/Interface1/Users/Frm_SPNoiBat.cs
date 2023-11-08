@@ -17,6 +17,9 @@ namespace Interface1.Users
             InitializeComponent();
         }
 
-      
+        private void Frm_SPNoiBat_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
