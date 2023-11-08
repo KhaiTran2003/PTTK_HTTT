@@ -36,24 +36,22 @@ namespace Interface1
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.btn_xacnhanDKY = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tb_ho = new System.Windows.Forms.TextBox();
+            this.tb_mk = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tb_sdt = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dgv = new System.Windows.Forms.DataGridView();
             this.btn_xoa = new System.Windows.Forms.Button();
             this.btn_sua = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.tb_tendem = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.tb_ten = new System.Windows.Forms.TextBox();
+            this.cb_gioitinh = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
@@ -85,9 +83,10 @@ namespace Interface1
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(120, 71);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 20);
+            this.label1.Size = new System.Drawing.Size(31, 20);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Tên";
+            this.label1.Text = "Họ";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label2
             // 
@@ -129,21 +128,11 @@ namespace Interface1
             this.label5.TabIndex = 7;
             this.label5.Text = "Giới tính";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(121, 415);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(61, 20);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Địa chỉ";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(120, 471);
+            this.label7.Location = new System.Drawing.Point(121, 426);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(83, 20);
             this.label7.TabIndex = 9;
@@ -156,19 +145,19 @@ namespace Interface1
             this.btn_xacnhanDKY.Size = new System.Drawing.Size(75, 23);
             this.btn_xacnhanDKY.TabIndex = 27;
             // 
-            // textBox1
+            // tb_ho
             // 
-            this.textBox1.Location = new System.Drawing.Point(427, 69);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(281, 22);
-            this.textBox1.TabIndex = 12;
+            this.tb_ho.Location = new System.Drawing.Point(427, 69);
+            this.tb_ho.Name = "tb_ho";
+            this.tb_ho.Size = new System.Drawing.Size(281, 22);
+            this.tb_ho.TabIndex = 12;
             // 
-            // textBox2
+            // tb_mk
             // 
-            this.textBox2.Location = new System.Drawing.Point(427, 203);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(281, 22);
-            this.textBox2.TabIndex = 12;
+            this.tb_mk.Location = new System.Drawing.Point(427, 203);
+            this.tb_mk.Name = "tb_mk";
+            this.tb_mk.Size = new System.Drawing.Size(281, 22);
+            this.tb_mk.TabIndex = 12;
             // 
             // textBox3
             // 
@@ -177,24 +166,17 @@ namespace Interface1
             this.textBox3.Size = new System.Drawing.Size(281, 22);
             this.textBox3.TabIndex = 12;
             // 
-            // textBox4
+            // tb_sdt
             // 
-            this.textBox4.Location = new System.Drawing.Point(427, 305);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(281, 22);
-            this.textBox4.TabIndex = 12;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(427, 413);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(281, 22);
-            this.textBox5.TabIndex = 12;
+            this.tb_sdt.Location = new System.Drawing.Point(427, 305);
+            this.tb_sdt.Name = "tb_sdt";
+            this.tb_sdt.Size = new System.Drawing.Size(281, 22);
+            this.tb_sdt.TabIndex = 12;
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(427, 471);
+            this.dateTimePicker1.Location = new System.Drawing.Point(427, 426);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(281, 22);
             this.dateTimePicker1.TabIndex = 13;
@@ -239,12 +221,12 @@ namespace Interface1
             this.label9.Size = new System.Drawing.Size(100, 23);
             this.label9.TabIndex = 21;
             // 
-            // textBox6
+            // tb_tendem
             // 
-            this.textBox6.Location = new System.Drawing.Point(427, 113);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(281, 22);
-            this.textBox6.TabIndex = 19;
+            this.tb_tendem.Location = new System.Drawing.Point(427, 113);
+            this.tb_tendem.Name = "tb_tendem";
+            this.tb_tendem.Size = new System.Drawing.Size(281, 22);
+            this.tb_tendem.TabIndex = 19;
             // 
             // label10
             // 
@@ -256,30 +238,31 @@ namespace Interface1
             this.label10.TabIndex = 22;
             this.label10.Text = "Tên";
             // 
-            // textBox7
+            // tb_ten
             // 
-            this.textBox7.Location = new System.Drawing.Point(427, 158);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(281, 22);
-            this.textBox7.TabIndex = 23;
+            this.tb_ten.Location = new System.Drawing.Point(427, 158);
+            this.tb_ten.Name = "tb_ten";
+            this.tb_ten.Size = new System.Drawing.Size(281, 22);
+            this.tb_ten.TabIndex = 23;
             // 
-            // comboBox1
+            // cb_gioitinh
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(427, 356);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(281, 24);
-            this.comboBox1.TabIndex = 24;
+            this.cb_gioitinh.FormattingEnabled = true;
+            this.cb_gioitinh.Location = new System.Drawing.Point(427, 356);
+            this.cb_gioitinh.Name = "cb_gioitinh";
+            this.cb_gioitinh.Size = new System.Drawing.Size(281, 24);
+            this.cb_gioitinh.TabIndex = 24;
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(721, 523);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(98, 43);
             this.button1.TabIndex = 28;
             this.button1.Text = "Xác Nhận";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Frm_DKYuser
             // 
@@ -287,24 +270,22 @@ namespace Interface1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(982, 653);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.cb_gioitinh);
+            this.Controls.Add(this.tb_ten);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.tb_tendem);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btn_sua);
             this.Controls.Add(this.btn_xoa);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.tb_sdt);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tb_mk);
+            this.Controls.Add(this.tb_ho);
             this.Controls.Add(this.btn_xacnhanDKY);
             this.Controls.Add(this.btn_exitDKY);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -328,24 +309,22 @@ namespace Interface1
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btn_xacnhanDKY;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tb_ho;
+        private System.Windows.Forms.TextBox tb_mk;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tb_sdt;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DataGridView dgv;
         private System.Windows.Forms.Button btn_xoa;
         private System.Windows.Forms.Button btn_sua;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox tb_tendem;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox tb_ten;
+        private System.Windows.Forms.ComboBox cb_gioitinh;
         private System.Windows.Forms.Button btn_exitDKY;
         private System.Windows.Forms.Button button1;
     }

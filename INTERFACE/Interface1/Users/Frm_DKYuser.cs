@@ -13,24 +13,24 @@ namespace Interface1
 {
     public partial class Frm_DKYuser : Form
     {
+
         public Frm_DKYuser()
         {
             InitializeComponent();
-            comboBox1.Items.Add("Nam");
-            comboBox1.Items.Add("Nữ");
+            cb_gioitinh.Items.Add("Nam");
+            cb_gioitinh.Items.Add("Nữ");
         }
         //Đăng ký
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=DataFirst;Integrated Security=True";
-            
-            string ho = textBox1.Text;
-            string tenDem = textBox6.Text;
-            string ten = textBox7.Text;
-            string matKhau = textBox2.Text;
+
+            string ho = tb_ho.Text;
+            string tenDem = tb_tendem.Text;
+            string ten = tb_ten.Text;
+            string matKhau = tb_mk.Text;
             string xacNhanMatKhau = textBox3.Text;
-            string diachi = textBox5.Text;
-            string gioiTinh = comboBox1.SelectedItem.ToString();
+            string gioiTinh = cb_gioitinh.SelectedItem.ToString();
             DateTime ngaySinh = dateTimePicker1.Value;
             int soDienThoai;
 
@@ -42,7 +42,7 @@ namespace Interface1
             }
 
             // Kiểm tra số điện thoại hợp lệ
-            if (!int.TryParse(textBox4.Text, out soDienThoai))
+            if (!int.TryParse(tb_sdt.Text, out soDienThoai))
             {
                 MessageBox.Show("Số điện thoại không hợp lệ");
                 return;
@@ -73,17 +73,16 @@ namespace Interface1
                 using (SqlCommand command = new SqlCommand(insertQuery, connection))
                 {
                     command.Parameters.AddWithValue("@MaTaiKhoanKH", maTaiKhoanKH);
-                    command.Parameters.AddWithValue("@MatKhau", matKhau);
                     command.Parameters.AddWithValue("@Ho", ho);
                     command.Parameters.AddWithValue("@TenDem", tenDem);
                     command.Parameters.AddWithValue("@Ten", ten);
-                    command.Parameters.AddWithValue("@GioiTinh", gioiTinh);
+                    command.Parameters.AddWithValue("@MatKhau", matKhau);
                     command.Parameters.AddWithValue("@NgaySinh", ngaySinh);
+                    command.Parameters.AddWithValue("@GioiTinh", gioiTinh);
                     command.Parameters.AddWithValue("@SoDienThoai", soDienThoai);
-                    command.Parameters.AddWithValue("@DiaChi", diachi);
 
 
-                    int rowsAffected = command.ExecuteNonQuery();
+                    var rowsAffected = command.ExecuteNonQuery();
                     if (rowsAffected > 0)
                     {
                         MessageBox.Show("Đăng ký thành công");
@@ -122,7 +121,6 @@ namespace Interface1
 
             return maTaiKhoanKH;
         }
-        
         private void btn_exitDKY_Click(object sender, EventArgs e)
         {
             this.Close();

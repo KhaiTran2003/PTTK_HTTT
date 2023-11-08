@@ -51,7 +51,7 @@ namespace Interface1.Users
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.text_nameProduct = new System.Windows.Forms.TextBox();
             this.btn_find = new System.Windows.Forms.Button();
             this.btn_mua = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -294,12 +294,12 @@ namespace Interface1.Users
             this.label12.TabIndex = 22;
             this.label12.Text = "1.900.000.000 vnd";
             // 
-            // textBox1
+            // text_nameProduct
             // 
-            this.textBox1.Location = new System.Drawing.Point(840, 17);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(230, 22);
-            this.textBox1.TabIndex = 24;
+            this.text_nameProduct.Location = new System.Drawing.Point(840, 17);
+            this.text_nameProduct.Name = "text_nameProduct";
+            this.text_nameProduct.Size = new System.Drawing.Size(230, 22);
+            this.text_nameProduct.TabIndex = 24;
             // 
             // btn_find
             // 
@@ -310,6 +310,7 @@ namespace Interface1.Users
             this.btn_find.TabIndex = 25;
             this.btn_find.Text = "Tìm kiếm";
             this.btn_find.UseVisualStyleBackColor = true;
+            this.btn_find.Click += new System.EventHandler(this.btn_find_Click);
             // 
             // btn_mua
             // 
@@ -400,6 +401,7 @@ namespace Interface1.Users
             this.button8.TabIndex = 26;
             this.button8.Text = "Mua";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // Frm_SPNoiBat
             // 
@@ -418,7 +420,7 @@ namespace Interface1.Users
             this.Controls.Add(this.button4);
             this.Controls.Add(this.btn_mua);
             this.Controls.Add(this.btn_find);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.text_nameProduct);
             this.Controls.Add(label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -481,7 +483,7 @@ namespace Interface1.Users
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox text_nameProduct;
         private System.Windows.Forms.Button btn_find;
         private System.Windows.Forms.Button btn_mua;
         private System.Windows.Forms.Button button1;

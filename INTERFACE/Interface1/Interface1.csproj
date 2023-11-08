@@ -114,6 +114,12 @@
     <Compile Include="Users\Frm_SPNoiBat.Designer.cs">
       <DependentUpon>Frm_SPNoiBat.cs</DependentUpon>
     </Compile>
+    <Compile Include="Users\Frm_ThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\Frm_ThanhToan.Designer.cs">
+      <DependentUpon>Frm_ThanhToan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Users\Frm_userMAIN.cs">
       <SubType>Form</SubType>
     </Compile>
