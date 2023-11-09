@@ -145,7 +145,7 @@ namespace Interface1
 
         }
         //Sửa
-        private void btn_sua_Click(object sender, EventArgs e)
+        private void btn_sua_Click_1(object sender, EventArgs e)
         {
             // Kiểm tra xem người dùng đã chọn một dòng trên DataGridView chưa
             if (dgv.SelectedRows.Count > 0)
@@ -208,7 +208,7 @@ namespace Interface1
             }
         }
         //xóa
-        private void btn_xoa_Click(object sender, EventArgs e)
+        private void btn_xoa_Click_1(object sender, EventArgs e)
         {
             if (dgv.SelectedRows.Count > 0)
             {

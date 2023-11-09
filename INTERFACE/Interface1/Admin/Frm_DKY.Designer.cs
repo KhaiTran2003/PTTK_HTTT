@@ -53,6 +53,8 @@ namespace Interface1
             this.tb_ten = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tb_makh = new System.Windows.Forms.TextBox();
             btn_exitDKY = new System.Windows.Forms.Button();
             this.grBox_csdl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
@@ -278,11 +280,30 @@ namespace Interface1
             this.label4.TabIndex = 4;
             this.label4.Text = "Xác nhận mật khẩu";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(761, 75);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(141, 20);
+            this.label6.TabIndex = 25;
+            this.label6.Text = "Mã Tài Khoản KH";
+            // 
+            // tb_makh
+            // 
+            this.tb_makh.Location = new System.Drawing.Point(685, 119);
+            this.tb_makh.Name = "tb_makh";
+            this.tb_makh.Size = new System.Drawing.Size(272, 22);
+            this.tb_makh.TabIndex = 26;
+            // 
             // Frm_DKY
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(982, 753);
+            this.Controls.Add(this.tb_makh);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.cb_gioiTinh);
             this.Controls.Add(this.tb_ten);
             this.Controls.Add(this.label10);
@@ -342,5 +363,7 @@ namespace Interface1
         private System.Windows.Forms.TextBox tb_ten;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox tb_makh;
     }
 }

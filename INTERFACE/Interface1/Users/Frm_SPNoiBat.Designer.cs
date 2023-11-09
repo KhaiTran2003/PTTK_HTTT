@@ -321,6 +321,7 @@ namespace Interface1.Users
             this.btn_mua.TabIndex = 26;
             this.btn_mua.Text = "Mua";
             this.btn_mua.UseVisualStyleBackColor = true;
+            this.btn_mua.Click += new System.EventHandler(this.btn_mua_Click);
             // 
             // button1
             // 
@@ -331,6 +332,7 @@ namespace Interface1.Users
             this.button1.TabIndex = 26;
             this.button1.Text = "Mua";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -341,6 +343,7 @@ namespace Interface1.Users
             this.button2.TabIndex = 26;
             this.button2.Text = "Mua";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -351,6 +354,7 @@ namespace Interface1.Users
             this.button3.TabIndex = 26;
             this.button3.Text = "Mua";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button5
             // 
@@ -361,6 +365,7 @@ namespace Interface1.Users
             this.button5.TabIndex = 26;
             this.button5.Text = "Mua";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -371,6 +376,7 @@ namespace Interface1.Users
             this.button6.TabIndex = 26;
             this.button6.Text = "Mua";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -381,6 +387,7 @@ namespace Interface1.Users
             this.button7.TabIndex = 26;
             this.button7.Text = "Mua";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button4
             // 
@@ -391,6 +398,7 @@ namespace Interface1.Users
             this.button4.TabIndex = 26;
             this.button4.Text = "Mua";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button8
             // 

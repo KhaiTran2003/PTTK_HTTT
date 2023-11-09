@@ -74,5 +74,53 @@ namespace Interface1.Users
             Frm_ThanhToan frm_ThanhToan = new Frm_ThanhToan();
             frm_ThanhToan.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Frm_ThanhToan frm_ThanhToan = new Frm_ThanhToan();
+            frm_ThanhToan.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Frm_ThanhToan frm_ThanhToan = new Frm_ThanhToan();
+            frm_ThanhToan.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Frm_ThanhToan frm_ThanhToan = new Frm_ThanhToan();
+            frm_ThanhToan.Show();
+        }
+
+        private void btn_mua_Click(object sender, EventArgs e)
+        {
+            Frm_ThanhToan frm_ThanhToan = new Frm_ThanhToan();
+            frm_ThanhToan.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Frm_ThanhToan frm_ThanhToan = new Frm_ThanhToan();
+            frm_ThanhToan.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Frm_ThanhToan frm_ThanhToan = new Frm_ThanhToan();
+            frm_ThanhToan.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Frm_ThanhToan frm_ThanhToan = new Frm_ThanhToan();
+            frm_ThanhToan.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Frm_ThanhToan frm_ThanhToan = new Frm_ThanhToan();
+            frm_ThanhToan.Show();
+        }
     }
 }

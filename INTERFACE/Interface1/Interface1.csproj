@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin\Frm_BCTK.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin\Frm_BCTK.Designer.cs">
-      <DependentUpon>Frm_BCTK.cs</DependentUpon>
-    </Compile>
     <Compile Include="Admin\Frm_DKY.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,12 +69,6 @@
     </Compile>
     <Compile Include="Admin\Frm_MAIN.Designer.cs">
       <DependentUpon>Frm_MAIN.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\Frm_CTY.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin\Frm_CTY.Designer.cs">
-      <DependentUpon>Frm_CTY.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\Frm_NCC.cs">
       <SubType>Form</SubType>
@@ -126,12 +114,6 @@
     <Compile Include="Users\Frm_userMAIN.Designer.cs">
       <DependentUpon>Frm_userMAIN.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Admin\Frm_BCTK.resx">
-      <DependentUpon>Frm_BCTK.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Frm_CTY.resx">
-      <DependentUpon>Frm_CTY.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Admin\Frm_DKY.resx">
       <DependentUpon>Frm_DKY.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Users\Frm_SPNoiBat.resx">
       <DependentUpon>Frm_SPNoiBat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Frm_ThanhToan.resx">
+      <DependentUpon>Frm_ThanhToan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users\Frm_userMAIN.resx">
       <DependentUpon>Frm_userMAIN.cs</DependentUpon>

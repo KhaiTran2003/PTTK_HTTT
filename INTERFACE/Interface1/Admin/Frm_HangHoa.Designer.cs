@@ -98,6 +98,7 @@ namespace Interface1
             this.btn_xoa.TabIndex = 16;
             this.btn_xoa.Text = "Xóa";
             this.btn_xoa.UseVisualStyleBackColor = true;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click_1);
             // 
             // btn_them
             // 
@@ -119,6 +120,7 @@ namespace Interface1
             this.btn_sua.TabIndex = 18;
             this.btn_sua.Text = "Sửa";
             this.btn_sua.UseVisualStyleBackColor = true;
+            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click_1);
             // 
             // btn_exit
             // 

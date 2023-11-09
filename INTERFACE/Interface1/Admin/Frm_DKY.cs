@@ -24,7 +24,7 @@ namespace Interface1
         public void loaddata()
         {
             command = connection.CreateCommand();
-            command.CommandText = "select  Ho, TenDem, Ten, MatKhau, GioiTinh,SoDienThoai,NgaySinh from KhachHang";
+            command.CommandText = "select  MaTaiKhoanKH, Ho, TenDem, Ten, MatKhau, GioiTinh,SoDienThoai,NgaySinh from KhachHang";
             adapter.SelectCommand = command;
             table.Clear();
             adapter.Fill(table);
@@ -123,6 +123,7 @@ namespace Interface1
                     if (rowsAffected > 0)
                     {
                         MessageBox.Show("Đăng ký thành công");
+                        //loaddata();
                     }
                     else
                     {
@@ -188,12 +189,18 @@ namespace Interface1
 
         private void btn_sua_Click(object sender, EventArgs e)
         {
-
+            command = connection.CreateCommand();
+            command.CommandText = "update KhachHang set MatKhau=  N'" + tb_mk.Text + "', Ho = N'" + tb_ho.Text + "',TenDem = N'" + tb_tendem.Text + "',Ten = N'" + tb_ten.Text + "',GioiTinh = N'" + cb_gioiTinh.Text + "',NgaySinh = '" + dateTimePicker1.Text + "',SoDienThoai = " + tb_sdt.Text + " where MaTaiKhoanKH = '"+tb_makh.Text+"'";
+            command.ExecuteNonQuery();
+            loaddata();
         }
 
         private void btn_xoa_Click(object sender, EventArgs e)
         {
-
+            command = connection.CreateCommand();
+            command.CommandText = "delete from KhachHang where  MatKhau=  N'" + tb_mk.Text + "', Ho = N'" + tb_ho.Text + "',TenDem = N'" + tb_tendem.Text + "',Ten = N'" + tb_ten.Text + "',GioiTinh = N'" + cb_gioiTinh.Text + "',NgaySinh = '" + dateTimePicker1.Text + "',SoDienThoai = " + tb_sdt.Text + " where MaTaiKhoanKH = '" + tb_makh.Text + "'";
+            command.ExecuteNonQuery();
+            loaddata();
         }
 
         private void Frm_DKY_Click(object sender, EventArgs e)
@@ -203,15 +210,17 @@ namespace Interface1
 
         private void dgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            tb_makh.ReadOnly = true;
             int i;
             i = dgv.CurrentRow.Index;
-            tb_ho.Text = dgv.Rows[i].Cells[0].Value.ToString();
-            tb_tendem.Text = dgv.Rows[i].Cells[1].Value.ToString();
-            tb_ten.Text = dgv.Rows[i].Cells[2].Value.ToString();
-            tb_mk.Text = dgv.Rows[i].Cells[3].Value.ToString();
-            tb_sdt.Text = dgv.Rows[i].Cells[5].Value.ToString();
-            cb_gioiTinh.Text = dgv.Rows[i].Cells[4].Value.ToString();
-            dateTimePicker1.Text = dgv.Rows[i].Cells[6].Value.ToString();
+            tb_makh.Text = dgv.Rows[i].Cells[0].Value.ToString();
+            tb_ho.Text = dgv.Rows[i].Cells[1].Value.ToString();
+            tb_tendem.Text = dgv.Rows[i].Cells[2].Value.ToString();
+            tb_ten.Text = dgv.Rows[i].Cells[3].Value.ToString();
+            tb_mk.Text = dgv.Rows[i].Cells[4].Value.ToString();
+            tb_sdt.Text = dgv.Rows[i].Cells[6].Value.ToString();
+            cb_gioiTinh.Text = dgv.Rows[i].Cells[5].Value.ToString();
+            dateTimePicker1.Text = dgv.Rows[i].Cells[7].Value.ToString();
         }
     }
 }
