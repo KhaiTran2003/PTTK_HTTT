@@ -66,7 +66,6 @@ namespace Interface1
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dgv2 = new System.Windows.Forms.DataGridView();
-            this.label15 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv1)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv3)).BeginInit();
@@ -253,7 +252,7 @@ namespace Interface1
             this.btn_XoaCN.TabIndex = 19;
             this.btn_XoaCN.Text = "Xóa";
             this.btn_XoaCN.UseVisualStyleBackColor = true;
-            this.btn_XoaCN.Click += new System.EventHandler(this.button2_Click);
+            this.btn_XoaCN.Click += new System.EventHandler(this.btn_xoaCN_Click);
             // 
             // btn_xoaNQL
             // 
@@ -263,7 +262,7 @@ namespace Interface1
             this.btn_xoaNQL.TabIndex = 20;
             this.btn_xoaNQL.Text = "Xóa";
             this.btn_xoaNQL.UseVisualStyleBackColor = true;
-            this.btn_xoaNQL.Click += new System.EventHandler(this.button3_Click);
+            this.btn_xoaNQL.Click += new System.EventHandler(this.btn_xoaNQL_Click);
             // 
             // btn_themNQL
             // 
@@ -404,22 +403,11 @@ namespace Interface1
             this.dgv2.Size = new System.Drawing.Size(942, 128);
             this.dgv2.TabIndex = 0;
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(307, 185);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(175, 17);
-            this.label15.TabIndex = 37;
-            this.label15.Text = "KHÔNG ĐIỀN VÀO Ô NÀY";
-            // 
             // Frm_HTQL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(982, 753);
-            this.Controls.Add(this.label15);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_suaNQL);
             this.Controls.Add(this.btn_suaCN);
@@ -508,6 +496,5 @@ namespace Interface1
         private System.Windows.Forms.DataGridView dgv2;
         private System.Windows.Forms.DataGridView dgv3;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label15;
     }
 }
