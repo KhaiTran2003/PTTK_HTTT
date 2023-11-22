@@ -66,8 +66,8 @@ namespace Interface1
                         // Đăng nhập thành công, thực hiện các hành động sau khi đăng nhập
                         MessageBox.Show("Đăng nhập thành công");
                         //Đường dẫn đến trang tiếp theo sau khi đăng nhập thành công
-                        Frm_HangHoa frm_HangHoa = new Frm_HangHoa();
-                        frm_HangHoa.Show();
+                        Frm_MAIN frm_MAIN = new Frm_MAIN();
+                        frm_MAIN.Show();
                     }
                     else
                     {
